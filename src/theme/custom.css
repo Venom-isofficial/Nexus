@@ -1,0 +1,145 @@
+/* Glassmorphism Utilities */
+.glass-card {
+  background: #11231a !important; /* Solid dark green base */
+  border: 1px solid rgba(165, 237, 114, 0.1) !important; /* Subtle lime border */
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+  color: white !important;
+  overflow: hidden;
+}
+
+.gradient-card-primary {
+  background: linear-gradient(135deg, #caff8a 0%, #a5ed72 100%) !important;
+  color: #0b1a12 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(165, 237, 114, 0.2) !important;
+}
+
+.gradient-card-primary h2, .gradient-card-primary p, .gradient-card-primary span {
+  color: #0b1a12 !important; /* Ensure text is dark on light green */
+}
+
+/* Pill Tab Bar Styles */
+.pill-tab-bar {
+  position: absolute !important;
+  bottom: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 90% !important;
+  max-width: 400px !important;
+  height: 64px !important;
+  border-radius: 32px !important;
+  background: rgba(17, 35, 26, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+  padding: 0 8px !important;
+}
+
+.pill-tab-bar ion-tab-button {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.pill-tab-bar ion-tab-button[aria-selected="true"] {
+  color: var(--ion-color-primary) !important;
+}
+
+/* Custom active indicator dot */
+.pill-tab-bar ion-tab-button[aria-selected="true"]::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--ion-color-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--ion-color-primary);
+}
+
+.pill-tab-bar ion-icon {
+  font-size: 20px !important;
+  margin-bottom: 2px !important;
+}
+
+.pill-tab-bar ion-label {
+  font-size: 0.65rem !important;
+  font-weight: 600 !important;
+}
+
+.light-theme .glass-card {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1) !important;
+  color: black !important;
+}
+
+/* LED Dot-Matrix Ticker */
+.led-ticker-container {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: 4px 8px;
+  border: 1px solid rgba(165, 237, 114, 0.3);
+}
+
+.light-theme .led-ticker-container {
+  background-color: rgba(165, 237, 114, 0.1);
+}
+
+.led-ticker-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  color: var(--ion-color-primary);
+  text-shadow: 0 0 5px rgba(165, 237, 114, 0.6);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.light-theme .led-ticker-text {
+  text-shadow: none;
+}
+
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+/* Full screen swiper for reels */
+.reel-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.reel-slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 16px 100px 16px; /* top: header space, bottom: pill tab bar space */
+  box-sizing: border-box;
+}
+
+.reel-slide > .glass-card {
+  width: 100%;
+  max-width: 500px;
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Hide scrollbar for read-through row */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

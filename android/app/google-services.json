@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "839258732098",
+    "project_id": "alchemist-at-work",
+    "storage_bucket": "alchemist-at-work.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839258732098:android:a36066b31457c09de75fdb",
+        "android_client_info": {
+          "package_name": "io.nexus.finance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839258732098-386snpkml3p63jkqr591rl7ohvsdeeiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBudCiS64Tov7qBufibOvtNh4SY0b8IaOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839258732098-386snpkml3p63jkqr591rl7ohvsdeeiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

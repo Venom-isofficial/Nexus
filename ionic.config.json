@@ -1,0 +1,7 @@
+{
+  "name": "tmp-fe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
